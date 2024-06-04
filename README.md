@@ -15,6 +15,22 @@ The Caesar cipher is one of the simplest and most widely known encryption techni
 
 ### Original Implementation
 The original implementation uses a list of alphabet characters to shift the letters.
+```
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+def caesar(text, shift, direction):
+  message = ""
+
+  if direction == "decode":
+    shift *= -1
+  for char in text:
+    if char in alphabet:
+      message += alphabet[alphabet.index(char) + shift]
+    else:
+      message += char
+    
+  print(f"The {direction}d message is {message}\n")
+```
 
 ### Optimized Implementation
 The optimized implementation uses ASCII values for character manipulation, which simplifies the shifting process and makes the code more efficient.
