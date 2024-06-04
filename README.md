@@ -1,5 +1,5 @@
 # Caesar Cipher
-This project contains a Python two implementations of the classic Caesar cipher encryption algorithm.
+This project contains two Python implementations of the classic Caesar cipher encryption algorithm.
 
 ## What is a Caesar Cipher?
 The Caesar cipher is one of the simplest and most widely known encryption techniques. Named after Julius Caesar, it is a type of substitution cipher in which each letter in the plaintext is shifted a certain number of places down or up the alphabet. For example, with a shift of 3, A would be replaced by D, B would become E, and so on.
